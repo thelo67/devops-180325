@@ -36,9 +36,7 @@ jobs:
     - run: npm run build --if-present
     
     - run: npm test
-
-    - name: Deploy
-    
+  
     - name: Deploy application to GitHub pages
       run: |
         git config --global user.name $user_name
